@@ -1,23 +1,20 @@
 html{
     background-color: gray;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
-h1{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
+
 #container{
     height: 200px;
     width: 400px;
-    background-color: lightseagreen;
-    border: 5px solid lightseagreen;
+    background-color: white;
+    border: 5px solid white;
     margin: 0 auto;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
 }
 /* timers */
 .label{
@@ -51,7 +48,6 @@ p{
 
 #counter{
     grid-area: 2/3/2/3;
-    color: red;
 }
 #work-timer{
     grid-area: 2/2/2/2;
@@ -64,10 +60,11 @@ p{
     align-self: center;
     justify-self: center;
 
-    width: 70px;
+    width: 60px;
     height: 30px;
 
     font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 #start{
@@ -82,12 +79,12 @@ p{
 
 @media screen and (max-width: 800px){
     #container{
-        width: 350px;
+        width: 290px;
     }
     .label, .timer{
         font-size: 20px;
     }
     .btn{
-        font-size: 10px;
+        font-size: 15px;
     }
 }
